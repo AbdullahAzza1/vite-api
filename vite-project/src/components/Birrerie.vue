@@ -1,4 +1,14 @@
 <script>
+
+export default {
+    name: "Birrerie",
+    props: {
+        info: Object
+    },
+
+
+}
+
 </script>
 
 <template>
