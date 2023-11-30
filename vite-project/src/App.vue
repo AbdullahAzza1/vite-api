@@ -20,6 +20,7 @@ export default {
     getCharacters() {
       axios.get(this.store.apiUrl).then(risultato => {
         this.store.birrerie = risultato.data.results;
+        console.log(this.store.birrerie);
       });
     }
   }
