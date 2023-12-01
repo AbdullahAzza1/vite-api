@@ -18,9 +18,10 @@ export default {
   },
   methods: {
     getCharacters() {
-      axios.get(this.store.apiUrl).then(risultato => {
-        this.store.birrerie = risultato.data.results;
-        console.log(this.store.birrerie);
+      axios.get(this.store.apiUrl).then(r => {
+        this.store.birrerie = r.data.results;
+        console.log(r.data);
+        this.store.birrerie = r.data
       });
     }
   }
