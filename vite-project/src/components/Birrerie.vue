@@ -15,22 +15,24 @@ export default {
     <div class="card-wrapper">
         <div class="card">
             <img :src="info.id" />
-            <h2> nome della birreria: {{ info.name }}</h2>
-
+            <h2> name of the brewery: {{ info.name }}</h2>
+            <p>adress: {{ info.address_1 }}</p>
+            <p>city: {{ info.city }}</p>
+            <p>phone: {{ info.phone }}</p>
         </div>
     </div>
 </template>
 
 <style scoped>
 .card-wrapper {
-    padding: 1rem;
-    width: 50%;
+    padding: 5px;
+    width: calc(100%/4);
 }
 
 .card {
     padding: 1rem;
-    background: orangered;
-    color: white;
+    background: maroon;
+    color: rgb(255, 255, 255);
 }
 
 .card img {
