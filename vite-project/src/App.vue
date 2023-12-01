@@ -22,13 +22,13 @@ export default {
 			let ricerca = this.store.apiUrl;
 
 			if (this.store.searchString.length) {
-				ricerca += `?name=${this.store.searchString}`;
+				ricerca += `&name=${this.store.searchString}`;
 			}
 
-			console.log("ho trovato:", ricerca);
+			console.log(ricerca);
 
 			axios.get(ricerca).then(r => {
-				this.store.birrerie = r.data.results;
+				this.store.birrerie = r.data;
 			});
 		}
 	}
