@@ -22,7 +22,7 @@ export default {
 			let ricerca = this.store.apiUrl;
 
 			if (this.store.searchString.length) {
-				ricerca += `&name=${this.store.searchString}`;
+				ricerca += `&by_name=${this.store.searchString}`;
 			}
 
 			console.log(ricerca);
